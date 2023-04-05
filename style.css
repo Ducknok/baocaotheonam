@@ -99,15 +99,32 @@ body {
 }
 
 .total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
   list-style: none;
-  text-align: center;
   word-spacing: 400px;
 }
 
 .months{
   color: #fff;
-  text-align: left;
-  margin-left: 480px;
-  word-spacing: 400px;
+}
+
+.sum {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.price {
+  display: inline-block;
+  margin: 0;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 10px;
 }
