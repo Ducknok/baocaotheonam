@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biểu đồ tiền tệ Việt Nam</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" charset="UTF-8"></script>
+</head>
+<body>
+  <!--Button-->
+  <div class="buttons">
+    <button class="btn1">Tiền chi</button>
+    <button class="btn2">Tiền thu</button>
+    <button class="btn3">Tổng</button>
+  </div>
+  <!--chart start-->
+  <div class="chart">
+    <div id="number">
+      <ul class="numbers">
+        <li>
+          <span>2000000đ</span>
+        </li>
+        <li>
+          <span>1600000đ</span>
+        </li>
+        <li>
+          <span>1200000đ</span>
+        </li>
+        <li>
+          <span>800000đ</span>
+        </li>
+        <li>
+          <span>400000đ</span>
+        </li>
+        <li>
+          <span>0đ</span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="bars">
+      <ul class="bars">
+        <li><div class="bar" data-vnd="1000000"></div><span>T1</span></li>
+        <li><div class="bar" data-vnd="2000000"></div><span>T2</span></li>
+        <li><div class="bar" data-vnd="0"></div><span>T3</span></li>
+        <li><div class="bar" data-vnd="1300000"></div><span>T4</span></li>
+        <li><div class="bar" data-vnd="0"></div><span>T5</span></li>
+        <li><div class="bar" data-vnd="0"></div><span>T6</span></li>
+        <li><div class="bar" data-vnd="0"></div><span>T7</span></li>
+        <li><div class="bar" data-vnd="0"></div><span>T8</span></li>
+        <li><div class="bar" data-vnd="0"></div><span>T9</span></li>
+        <li><div class="bar" data-vnd="0"></div><span>T10</span></li>
+        <li><div class="bar" data-vnd="0"></div><span>T11</span></li>
+        <li><div class="bar" data-vnd="0"></div><span>T12</span></li>
+      </ul>
+    </div>
+  </div>
+  <!--chart end-->
+  <script type="text/javascript">
+    $(function(){
+      $('.bars li .bar').each(function(key,bar){
+        var vnd = $(this).data('vnd');
+        $(this).animate({
+          'height': vnd/7700 + 'px'
+        },1000);
+      });
+    });
+  </script>
+  <div class="total">
+    <p>Tổng: 4300000đ</p>
+  </div>
+  <div class="months">
+    <p>Tháng1: 1000000đ</p>
+    <p>Tháng2: 2000000đ</p>
+    <p>Tháng3: 0đ</p>
+    <p>Tháng4: 1300000đ</p>
+    <p>Tháng5: 0đ</p>
+    <p>Tháng6: 0đ</p>
+    <p>Tháng7: 0đ</p>
+    <p>Tháng8: 0đ</p>
+    <p>Tháng9: 0đ</p>
+    <p>Tháng10: 0đ</p>
+    <p>Tháng11: 0đ</p>
+    <p>Tháng12: 0đ</p>
+  </div>
+</body>
+</html>
