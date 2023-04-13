@@ -1,8 +1,12 @@
+:root{
+   --primary-color:cornsilk;
+    --secondary-color:orange;
+}
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: #333;
+    background: var(--primary-color);
   }
   
 .chart{
@@ -13,7 +17,7 @@ body {
 }
 
 .numbers{
-  color: #fff;
+  color: var(--secondary-color);
   margin: 0;
   padding: 0;
   width: 50px;
@@ -38,7 +42,7 @@ body {
 }
 
 .bars{
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 600;
   background: #555;
@@ -69,13 +73,14 @@ body {
 .bars .bar{
   display: block;
   background: #17C0E8;
-  width: 40px;
+  width: 10px;
   margin-right: 10px;
   position: absolute;
   bottom: 0;
   text-align: center;
   box-shadow: 0 0 10px 0 rgba(23, 192, 235, 0.5);
   transition-property: background, box-shadow;
+  right: 14%;
 }
 
 .bars .bar:hover{
@@ -85,7 +90,7 @@ body {
 }
 
 .bars .bar:before{
-  color: #fff;
+  color: var(--secondary-color);
   content: attr(data-vnd) 'đ';
   position: relative;
   bottom: 20px;
@@ -102,13 +107,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  color: var(--secondary-color);
   list-style: none;
   word-spacing: 400px;
 }
 
 .months{
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .sum {
@@ -125,6 +130,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: var(--secondary-color);
   margin-top: 10px;
 }
